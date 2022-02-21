@@ -26,14 +26,35 @@
     }
     li {
       list-style-type: none;
-        list-style-position:inside;
-        margin:0;
-        padding:0;
+      list-style-position:inside;
+      margin:0;
+      padding:0;
       text-align: center;
+      font-weight: bold;
     }
-    social-prop {
-      width: 20px;
-      color: beige;
+    table{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center !important;
+    }
+    .h2{
+      color:rgb(49, 49, 49);
+      font-weight: bolder;
+      font-size: 25px;
+    }
+    .h3{
+      color:rgb(49, 49, 49);
+      font-weight: bold;
+      font-size: 20px;
+    }
+    .location-text {
+      font-size: 12px;
+    }
+    .location-text-h {
+      font-size: 15px;
+    }
+    img.social-prop {
+      filter: invert(92%) sepia(6%) saturate(2022%) hue-rotate(340deg) brightness(92%) contrast(75%);
     }
 
     @media screen and (max-width: 530px) {
@@ -51,7 +72,7 @@
       <div class="wrapper-inner">   
           <!-- TOP HEADER   -->
         <thead> 
-          <table class="outer-table" cellpadding="0" cellspacing="0" width="640" style="background-color: rgb(74,111,97);">     
+          <table class="outer-table" cellpadding="0" cellspacing="0" width="600" style="background-color: rgb(74,111,97);">     
             <tr>         
               <td class="header">       
                 <p style="font-weight: 900;font-size: 20px;"><a href="#" style="text-decoration: none; color: wheat;">Click to view this email in your browser</a></p>  
@@ -59,7 +80,7 @@
             </tr>
           </table>      
           <!-- Logo & Banner -->
-          <table cellpadding="0" cellspacing="0" width="640" style="background-image: url(./img/coffee-shop-bar.jpg);background-size: 100%;align-items: center;">                 
+          <table cellpadding="0" cellspacing="0" width="600" style="background-image: url(./img/coffee-shop-bar.jpg);background-size: 100%;align-items: center;">                 
             <tr>                     
               <th>
                 <div class="logo-banner">
@@ -72,13 +93,15 @@
               </th>                 
             </tr>             
           </table> 
-        </thead>  
+        </thead> 
+
           <!-- SEASONAL FAVs -->
+
         <tbody>
-          <table cellpadding="0" cellspacing="0" width="640" style="margin-top: 4 0px;">                 
+          <table cellpadding="0" cellspacing="0" width="600" style="margin-top: 10px; margin-bottom: 3;">                 
             <tr>                    
               <th>
-                <p class="h2" style="color:rgb(49, 49, 49);">New Seasonal Flavors!</p>
+                <p class="h2">New Seasonal Flavors!</p>
               </th>
             </tr>
             <tr>
@@ -87,9 +110,10 @@
               </td>
             </tr>        
             <tr>
-              <td>
+              <th>
                 <p class="h3" style="margin-bottom: 0;text-align:center;">Returning and New Fall Arrivals</p>
               </th> 
+            </tr>
             <tr>
               <td>
                 <ul style="font-size: 16px; list-style-type: none; padding:0;text-align:center;">
@@ -103,10 +127,10 @@
             </tr>
           </table> 
           <!-- EVENTS -->
-          <table cellpadding="0" cellspacing="0" width="640">    
+          <table cellpadding="0" cellspacing="0" width="600">    
             <tr>             
               <th>
-                <p class="h2" style="color:rgb(49, 49, 49);margin-top: 80px;">Upcoming Events!</p>
+                <p class="h2" style="margin-top: 60px;">Upcoming Events!</p>
               </th>
             </tr>  
             <tr>
@@ -118,6 +142,7 @@
               <th>
                 <p class="h3" style="margin-bottom: 0;">Join Us For Some Great Coffee and Music</p>
               </th> 
+            </tr>
             <tr>
               <td>
                 <ul style="font-size: 16px; list-style-type: none; padding:0;text-align:center;">
@@ -134,13 +159,17 @@
               </td>  
             </tr> 
           </table> 
+
           <!-- RETAIL ITEMS -->
-          <table cellpadding="0" cellspacing="0" width="640">                 
+
+          <table cellpadding="" cellspacing="" width="600">                 
             <tr>                     
-              <td>
-                <p class="h2" style="color:rgb(49, 49, 49);margin-top: 80px;">Shop Our New Retail items</p>
-              </td>                 
-            </tr>  
+              <th>
+                <p class="h2" style="margin-top: 40; margin-bottom: 8;">Shop Our New Retail items</p>
+              </th>                 
+            </tr> 
+          </table> 
+          <table cellpadding="" cellspacing="0" width="600" border="0"> 
             <tr>
               <td class="two-column">
                 <div class="section">
@@ -150,13 +179,38 @@
                         <table class="content">
                           <tr>
                             <td>
-                              <img src="./img/coffe-mugs-shop.jpg" class="img-response" alt="Fall Coffee Mugs" style="width:300px;height:300px;border-style: solid; border-width: 5px;">
+                              <img src="./img/coffe-mugs-shop.jpg" class="img-response" alt="Fall Coffee Mugs" style="width:250px;height:250px;border-style: solid; border-width: 5px;">
+                            </td>
+                            <td>
+                              <img src="./img/coffee-tumbler-shop.jpg" class="img-response" alt="Fall Coffee Tumblers" style="width:250px;height:250px;border-style: solid; border-width: 5px;">
                             </td>
                           </tr>
                           <tr>
                             <td class="text">
                               <p>Coffee Mugs</p> 
                               <p>Starting at $12.99</p>
+                            </td>
+                            <td class="text">
+                              <p>Coffee Tumbler's</p>
+                              <p>Starting at $15.99</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <img src="./img/coffee-flavor-1.jpg" class="img-response" alt="Assorted Packaged Coffee Flavors" style="width:250px;height:250px;border-style: solid; border-width: 5px;">
+                            </td>
+                            <td>
+                              <img src="./img/coffee-flavors-2.jpg" class="img-response" alt="Assorted Packaged Coffee Flavors" style="width:250px;height:250px;border-style: solid; border-width: 5px;">
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="text">
+                              <p>Seasonal <b>Blue Bottle</b> Coffee</p>
+                              <p>Starting at $14</p>
+                            </td>
+                            <td class="text">
+                              <p>Seasonal <b>Reserve</b> Coffee</p>
+                              <p>Starting at $13</p>
                             </td>
                           </tr>
                         </table>
@@ -166,88 +220,14 @@
                 </div>
               </td>
             </tr>         
-            <tr>
-              <td>
-                <div>
-                  <table width="100%">
-                    <tr>
-                      <td class="innrer-td">
-                        <table class="content">
-                          <tr>
-                            <td>
-                              <img src="./img/coffee-tumbler-shop.jpg" class="img-response" alt="Fall Coffee Tumblers" style="width:300px;height:300px;border-style: solid; border-width: 5px;">
-                            </td>
-                          </tr>
-                          <tr>
-                            <td class="text">
-                              <p>Coffee Tumbler's</p>
-                              <p>Starting at $15.99</p>
-                            </td>
-                          </tr>
-                        </table>
-                      </td>
-                    </tr>
-                  </table>
-                </div>
-              </td>
-            </tr>      
-          </table> 
-          <tr>
-            <td class="two-column">
-              <div class="section">
-                <table width="100%">
-                  <tr>
-                    <td class="innrer-td">
-                      <table class="content">
-                        <tr>
-                          <td>
-                            <img src="./img/coffee-flavor-1.jpg" class="img-response" alt="Assorted Packaged Coffee Flavors" style="width:300px;height:300px;border-style: solid; border-width: 5px;">
-                          </td>
-                        </tr>
-                        <tr>
-                          <td class="text">
-                            <p>Seasonal <b>Blue Bottle</b> Coffee</p>
-                            <p>Starting at $14</p>
-                          </td>
-                        </tr>
-                      </table>
-                    </td>
-                  </tr>
-                </table>
-              </div>
-            </td>
-          </tr>         
-          <tr>
-            <td>
-              <div>
-                <table width="100%">
-                  <tr>
-                    <td class="innrer-td">
-                      <table class="content">
-                        <tr>
-                          <td>
-                            <img src="./img/coffee-flavors-2.jpg" class="img-response" alt="Assorted Packaged Coffee Flavors" style="width:300px;height:300px;border-style: solid; border-width: 5px;">
-                          </td>
-                        </tr>
-                        <tr>
-                          <td class="text">
-                            <p>Seasonal <b>Reserve</b> Coffee</p>
-                            <p>Starting at $13</p>
-                          </td>
-                        </tr>
-                      </table>
-                    </td>
-                  </tr>
-                </table>
-              </div>
-            </td>
-          </tr>      
-        </table> 
+          </table>
+          
           <!-- LOCATION & CONTACT  -->
-          <table cellpadding="0" cellspacing="0" width="640">                 
+
+          <table cellpadding="" cellspacing="" width="600">                 
             <tr>                     
               <th>
-                <p class="h2" style="color:rgb(49, 49, 49);margin-top: 80px;">Our Locations</p>
+                <p class="h2" style="margin-top: 60px; margin-bottom: 0;">Our Locations</p>
               </th>                 
             </tr>             
             <tr>
@@ -256,17 +236,31 @@
                   <table width="100%">
                     <tr>
                       <td class="innrer-td">
-                        <table class="content">
-                          <tr>
-                            <td>
-                              <img src="" class="img-response" alt="">
-                            </td>
-                          </tr>
+                        <table class="content cellpadding="" cellspacing="20">
                           <tr>
                             <td class="text">
-                              <p><b>Over-The-Rine</b></p>
-                              <p>1500 Vine St</p>
-                              <p>Cincinnati, OH 45202</p>
+                              <p class="location-text-h"><b>Over-The-Rine</b></p>
+                              <p class="location-text">1500 Vine St</p>
+                              <p class="location-text">Cincinnati, OH 45202</p>
+                              <p class="location-text">513-555-5551</p>
+                            </td>
+                            <td class="text">
+                              <p class="location-text-h"><b>Reading</b></p>
+                              <p class="location-text">30 W Benson St</p>
+                              <p class="location-text">Cincinnati, OH 45215</p>
+                              <p class="location-text">513-555-5552</p>
+                          </td>
+                            <td class="text">
+                              <p class="location-text-h"><b>Clifton</b></p>
+                              <p class="location-text">120 W McMillian St</p>
+                              <p class="location-text">Cincinnati, OH 45219</p>
+                              <p class="location-text">513-555-5553</p>
+                            </td>
+                            <td class="text">
+                              <p class="location-text-h"><b>Finneytown</b></p>
+                              <p class="location-text">8421 Winton Rd</p>
+                              <p class="location-text">Cincinnati, OH 45231</p>
+                              <p class="location-text">513-555-5554</p>
                             </td>
                           </tr>
                         </table>
@@ -276,102 +270,34 @@
                 </div>
               </td>
             </tr>         
-            <tr>
-              <td>
-                <div>
-                  <table width="100%">
-                    <tr>
-                      <td class="innrer-td">
-                        <table class="content">
-                          <tr>
-                            <td>
-                              <img src="" class="img-response" alt="">
-                            </td>
-                          </tr>
-                          <tr>
-                            <td class="text">
-                              <p><b>Clifton</b></p>
-                              <p>120 W McMillian St</p>
-                              <p>Cincinnati, OH 45219</p>
-                            </td>
-                          </tr>
-                        </table>
-                      </td>
-                    </tr>
-                  </table>
-                </div>
-              </td>
-            </tr>      
-          </table> 
-          <tr>
-            <td class="two-column">
-              <div class="section">
-                <table width="100%">
-                  <tr>
-                    <td class="innrer-td">
-                      <table class="content">
-                        <tr>
-                          <td>
-                            <img src="" class="img-response" alt="">
-                          </td>
-                        </tr>
-                        <tr>
-                          <td class="text">
-                            <p><b>Reading</b></p>
-                            <p>30 W Benson St</p>
-                            <p>Cincinnati, OH 45215</p>
-                          </td>
-                        </tr>
-                      </table>
-                    </td>
-                  </tr>
-                </table>
-              </div>
-            </td>
-          </tr>         
-          <tr>
-            <td>
-              <div>
-                <table width="100%">
-                  <tr>
-                    <td class="innrer-td">
-                      <table class="content">
-                        <tr>
-                          <td>
-                            <img src="" class="img-response" alt="">
-                          </td>
-                        </tr>
-                        <tr>
-                          <td class="text">
-                            <p><b>Finneytown</b></p>
-                            <p>8421 Winton Rd</p>
-                            <p>Cincinnati, OH 45231</p>
-                          </td>
-                        </tr>
-                      </table>
-                    </td>
-                  </tr>
-                </table>
-              </div>
-            </td>
-          </tr>      
-        </table>         
-        </tbody>
+        <tbody>
+          
         <!-- FOOTER -->
+
         <tfoot>
-          <table cellpadding="0" cellspacing="0" width="640" style="background-color: rgb(17,90,72) ;">    
+          <table cellpadding="0" cellspacing="10" width="600" style="background-color: rgb(17,90,72) ;">    
             <tr>             
               <td>
-                <div id="callout">
-                  <ul class="social">
-                    <li><a href="#"><img class="social-prop" src="./img/facebook.svg" alt="Facebook Icon"></a></li>
-                    <li><a href="#"><img class="social-prop" src="./img/twitter.svg" alt="Twitter Icon"></a></li>
-                    <li><a href="#"><img class="social-prop" src="./img/instagram.svg" alt="Instagram Icon"></a></li>
-                    <li><a href="#"><img class="social-prop" src="./img/youtube.svg" alt="Youtube Icon"></a></li>
-                  </ul>
-                </div>
+                <table class="social-icon">
+                  <tr>
+                    <td width="40"><a href="#"><img class="social-prop" src="./img/facebook.svg" alt="Facebook Icon" width="30" style="fill: rgb(209, 189, 151);"></a></td>
+                    <td width="40"><a href="#"><img class="social-prop" src="./img/twitter.svg" alt="Twitter Icon" width="30"></a></td>
+                    <td width="40"><a href="#"><img class="social-prop" src="./img/instagram.svg" alt="Instagram Icon" width="30"></a></td>
+                    <td width="40"><a href="#"><img class="social-prop" src="./img/youtube.svg" alt="Youtube Icon" width="30"></a></td>
+                  </tr>
+                </table>
+                <table class="footer-text">
+                  <tr>
+                    <td style="text-align: center; font-size: 10px">
+                      <p>Copyright &copy; Anatta Café. All Rights Reserved</p>
+                      <a href="#" class="privacy"><p>Privacy Policy / Terms & Condition</p></a>
+                      <p>This is an unmonitored email box. Please do not reply to this email.</p> 
+                    </td>
+                  </tr>      
+                </table>
               </td>
             </tr> 
+          </table>  
         </tfoot>
         <!-- Outer Tags -->
       </div>
